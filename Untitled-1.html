@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePlate Food Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('mal.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background: #2196F3; /* Blue */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #ffffff; /* White */
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            text-align: center;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        footer {
+            background: #2196F3; /* Blue */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-card-content {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #2196F3; /* Blue */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BluePlate Food Hub</h1>
+        <p>Savor the Flavors, Enjoy the Moments</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="container">
+        <h2>Welcome to BluePlate Food Hub</h2>
+        <p>Indulge in a culinary journey of delectable dishes crafted with passion and expertise.</p>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Our Menu</h2>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="dish1.jpg" alt="Dish 1">
+                <div class="product-card-content">
+                    <div class="product-title">Specialty Dish</div>
+                    <div class="product-description">A mouthwatering dish that will tantalize your taste buds.</div>
+                    <div class="product-price">$19.99</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="dish2.jpg" alt="Dish 2">
+                <div class="product-card-content">
+                    <div class="product-title">Signature Dessert</div>
+                    <div class="product-description">A sweet treat to end your meal on a delightful note.</div>
+                    <div class="product-price">$9.99</div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About BluePlate Food Hub</h2>
+        <p>At BluePlate, we believe in creating memorable dining experiences. Our chefs are dedicated to delivering dishes that are not just meals but moments to cherish.</p>
+        <!-- Introduce team members or additional details about the business -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us using the form below:</p>
+        <form class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BluePlate Food Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
